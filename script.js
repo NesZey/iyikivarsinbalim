@@ -1,9 +1,9 @@
 // Müzik Kontrolleri
 const music = document.getElementById("bg-music");
 const musicList = [
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3",
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3",
-    "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3"
+    "https://www.youtube.com/watch?v=qcikCadCOuQ",
+    "https://www.youtube.com/watch?v=9FwvB3yjWAU",
+    "https://www.youtube.com/watch?v=KKfL15rQGcE"
 ];
 let currentMusicIndex = 0;
 
