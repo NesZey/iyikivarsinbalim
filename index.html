@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sevgilime Özel 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel music-panel">
+            <h2>Müzikler</h2>
+            <div class="music-controls">
+                <button class="music-btn" onclick="playMusic()">▶️ Oynat</button>
+                <button class="music-btn" onclick="pauseMusic()">⏸️ Duraklat</button>
+                <button class="music-btn" onclick="nextMusic()">⏭️ Sonraki</button>
+            </div>
+            <audio id="bg-music" loop>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Tarayıcınız audio öğesini desteklemiyor.
+            </audio>
+        </div>
+
+        <div class="panel image-panel">
+            <h2>Fotoğraflarımız</h2>
+            <img id="current-image" src="https://via.placeholder.com/200x200?text=Sevgilim+İçin" alt="Fotoğraf">
+            <button class="heart-button" onclick="changeImage()">Sonraki Fotoğraf</button>
+        </div>
+    </div>
+
+    <div class="panel chat-panel">
+        <h2>Sevgilim İçin Mesaj</h2>
+        <input type="text" id="chat-input" placeholder="Bir şeyler yaz...">
+        <button class="heart-button" onclick="checkMessage()">Gönder</button>
+    </div>
+
+    <div class="heart-animation" id="heart-popup" onclick="closeHeart()"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
